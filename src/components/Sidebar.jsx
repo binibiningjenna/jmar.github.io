@@ -2,6 +2,7 @@ import { X, Home, User, Award, Briefcase, FileText, Moon } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../img/logo_transparent.png";
 import profile from "../img/profile.jpg";
+import Button from "./Button.jsx";
 
 export default function Sidebar({ isSidebarOpen, setIsSidebarOpen }) {
   const location = useLocation();
@@ -28,7 +29,6 @@ export default function Sidebar({ isSidebarOpen, setIsSidebarOpen }) {
         `}
       >
         <div className="flex flex-col h-full overflow-hidden">
-          {/* Mobile close button */}
           <div className="flex items-center justify-between lg:hidden mb-8">
             <img src={logo} alt="Logo" className="w-8 h-8" />
 
@@ -42,10 +42,7 @@ export default function Sidebar({ isSidebarOpen, setIsSidebarOpen }) {
             <img src={profile} alt="Profile" className="w-30 h-30 rounded-full object-cover border-4 border-gray-300" />
             <h1 className="mt-4 text-xl font-bold">Jenna Miles Reyes</h1>
             <p className="text-sm text-gray-500">Front-End Developer</p>
-
-            <button className="mt-4 w-full py-2 px-4 rounded-xl text-sm font-medium border border-gray-400 hover:bg-gray-100">
-              <FileText size={16} className="inline mr-1" /> Resume
-            </button>
+            <Button icon={FileText}>Resume</Button>
           </div>
 
           {/* Navigation Menu */}
