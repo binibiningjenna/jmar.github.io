@@ -1,4 +1,4 @@
-import { X, Home, User, Award, Briefcase, FileText, Moon } from "lucide-react";
+import { X, Home, User, Award, FolderCode, Download, Moon } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../img/logo_transparent.png";
 import profile from "../img/profile.jpg";
@@ -11,7 +11,7 @@ export default function Sidebar({ isSidebarOpen, setIsSidebarOpen }) {
     { name: "Home", icon: Home, path: "/" },
     { name: "About", icon: User, path: "/about" },
     { name: "Achievements", icon: Award, path: "/achievements" },
-    { name: "Projects", icon: Briefcase, path: "/projects" },
+    { name: "Projects", icon: FolderCode, path: "/projects" },
   ];
 
   return (
@@ -28,7 +28,7 @@ export default function Sidebar({ isSidebarOpen, setIsSidebarOpen }) {
           ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"}
         `}
       >
-        <div className="flex flex-col h-full overflow-hidden">
+        <div className="flex flex-col h-full overflow-hidden ">
           <div className="flex items-center justify-between lg:hidden mb-8">
             <img src={logo} alt="Logo" className="w-8 h-8" />
 
@@ -42,7 +42,7 @@ export default function Sidebar({ isSidebarOpen, setIsSidebarOpen }) {
             <img src={profile} alt="Profile" className="w-30 h-30 rounded-full object-cover border-4 border-gray-300" />
             <h1 className="mt-4 text-xl font-bold">Jenna Miles Reyes</h1>
             <p className="text-sm text-gray-500">Front-End Developer</p>
-            <Button icon={FileText}>Resume</Button>
+            <Button icon={Download}>Resume</Button>
           </div>
 
           {/* Navigation Menu */}
