@@ -1,4 +1,4 @@
-import { X, Home, User, Award, FolderCode, Download, Moon } from "lucide-react";
+import { X, Home, User, Award, FolderCode, Download, Moon, ShieldCheck } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../img/logo_transparent.png";
 import profile from "../img/profile.jpg";
@@ -16,20 +16,19 @@ export default function Sidebar({ isSidebarOpen, setIsSidebarOpen }) {
 
   return (
     <>
-      {/* Background dim for mobile */}
-      {isSidebarOpen && <div className="fixed inset-0 bg-black/30 z-40 backdrop-blur-sm lg:hidden" onClick={() => setIsSidebarOpen(false)} />}
+      {isSidebarOpen && <div className="fixed inset-0 bg-black/30 z-40 backdrop-blur-sm xl:hidden" onClick={() => setIsSidebarOpen(false)} />}
 
       <aside
         className={`
           bg-white text-gray-900 fixed z-50 h-screen w-64 shadow-xl 
           transform transition-transform duration-300 p-6
-          lg:h-[calc(100vh-2rem)] lg:ml-4 lg:my-4 lg:rounded-xl 
-          lg:shadow-none lg:translate-x-0 flex flex-col justify-between
+          xl:h-[calc(100vh-2rem)] xl:ml-4 xl:my-4 xl:rounded-xl 
+          xl:shadow-none xl:translate-x-0 flex flex-col justify-between
           ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"}
         `}
       >
         <div className="flex flex-col h-full overflow-hidden ">
-          <div className="flex items-center justify-between lg:hidden mb-8">
+          <div className="flex items-center justify-between xl:hidden mb-8">
             <img src={logo} alt="Logo" className="w-8 h-8" />
 
             <button onClick={() => setIsSidebarOpen(false)} className="p-2 rounded-full hover:bg-gray-100">
@@ -39,8 +38,13 @@ export default function Sidebar({ isSidebarOpen, setIsSidebarOpen }) {
 
           {/* Profile */}
           <div className="flex flex-col mb-4">
-            <img src={profile} alt="Profile" className="w-30 h-30 rounded-full object-cover border-4 border-gray-300" />
-            <h1 className="mt-4 text-xl font-bold">Jenna Miles Reyes</h1>
+            <img src={profile} alt="Profile" className="w-30 h-30 mb-4 rounded-full object-cover border-4 border-gray-300" />
+            <div className="flex flex-row items-center gap-2">
+              <h1 className="text-xl font-bold">Jenna Miles Reyes</h1>
+              <span className="inline-flex items-center">
+                <ShieldCheck className="w-5 h-5" />
+              </span>
+            </div>
             <p className="text-sm text-gray-500">Front-End Developer</p>
             <Button icon={Download}>Resume</Button>
           </div>

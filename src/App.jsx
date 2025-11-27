@@ -17,8 +17,8 @@ export default function App() {
         <Sidebar isSidebarOpen={isSidebarOpen} setIsSidebarOpen={setIsSidebarOpen} />
 
         {/* MAIN CONTENT */}
-        <main className="flex flex-col w-full lg:ml-64 overflow-y-auto bg-gray-200">
-          <header className="lg:hidden bg-white p-4 border-b border-gray-200 sticky top-0 z-30 flex items-center justify-between">
+        <main className="flex flex-col flex-1 overflow-y-auto bg-gray-200 xl:pl-68">
+          <header className="xl:hidden bg-white p-4 border-b border-gray-200 sticky top-0 z-30 flex items-center justify-between">
             <img src={logo} alt="Logo" className="w-8 h-8" />
             <button onClick={() => setIsSidebarOpen(true)} className="p-2 rounded-xl text-gray-900 hover:bg-gray-100">
               <Menu size={24} />
@@ -26,14 +26,12 @@ export default function App() {
           </header>
 
           {/* ROUTES */}
-          <div className="px-4 lg:px-0">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/achievements" element={<Achievements />} />
-              <Route path="/projects" element={<Projects />} />
-            </Routes>
-          </div>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/achievements" element={<Achievements />} />
+            <Route path="/projects" element={<Projects />} />
+          </Routes>
         </main>
       </div>
     </Router>
