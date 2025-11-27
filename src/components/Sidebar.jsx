@@ -45,7 +45,7 @@ export default function Sidebar({ isSidebarOpen, setIsSidebarOpen }) {
                 <ShieldCheck className="w-5 h-5" />
               </span>
             </div>
-            <p className="text-sm text-gray-500">Front-End Developer</p>
+            <p className="text-sm text-gray-800">Front-End Developer</p>
             <Button icon={Download}>Resume</Button>
           </div>
 
@@ -61,7 +61,7 @@ export default function Sidebar({ isSidebarOpen, setIsSidebarOpen }) {
                   onClick={() => window.innerWidth < 1024 && setIsSidebarOpen(false)}
                   className={`
                     flex items-center p-3 rounded-xl transition
-                    ${isActive ? "bg-gray-100 text-gray-900 font-semibold" : "text-gray-700 hover:bg-gray-100"}
+                    ${isActive ? "bg-gray-100 text-gray-900 font-semibold" : "text-gray-800 hover:bg-gray-100"}
                   `}
                 >
                   <item.icon size={20} className="mr-3" />
@@ -90,7 +90,7 @@ export default function Sidebar({ isSidebarOpen, setIsSidebarOpen }) {
               </label>
             </div>
 
-            <p className="mt-4 text-xs text-center text-gray-400">
+            <p className="mt-4 text-xs text-center text-gray-800">
               <strong>JM</strong> — © 2025
             </p>
           </div>

@@ -5,7 +5,7 @@ export default function StatCard({ icon: Icon, title, value }) {
         {Icon && <Icon className="h-6 w-6 text-gray-900" />}
       </div>
       <div>
-        <p className="text-gray-500 text-sm">{title}</p>
+        <p className="text-gray-800 text-sm">{title}</p>
         <p className="text-2xl font-bold">{value}</p>
       </div>
     </div>

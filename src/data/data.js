@@ -12,6 +12,12 @@ const data = {
         company: "WebSolutions",
         quote: "Jenna consistently delivered high-quality work...",
     },
+     {
+        name: "Jane Smith",
+        position: "Product Manager",
+        company: "WebSolutions",
+        quote: "Jenna consistently delivered high-quality work...",
+    },
     {
         name: "Jane Smith",
         position: "Product Manager",

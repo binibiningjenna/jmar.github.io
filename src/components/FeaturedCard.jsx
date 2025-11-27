@@ -9,7 +9,7 @@ export default function FeaturedCard({ title, description, link }) {
         </div>
         <span className="bg-gray-200 text-gray-800 text-xs font-semibold px-2 py-0.5 rounded-full">Public</span>
       </div>
-      <div className="text-sm text-gray-500 line-clamp-2 mb-3">{description}</div>
+      <div className="text-sm text-gray-800 line-clamp-3 mb-3">{description}</div>
       <hr className="my-4 text-gray-400"></hr>
     </>
   );

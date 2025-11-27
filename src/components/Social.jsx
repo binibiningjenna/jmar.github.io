@@ -5,22 +5,22 @@ export default function Social() {
     <>
       <div className="flex gap-4">
         <a href="https://github.com/binibiningjenna" target="_blank" rel="noopener noreferrer">
-          <FaGithub className="w-8 h-8 text-gray-800" />
+          <FaGithub className="w-8 h-8" />
         </a>
 
         <a href="mailto:atienzajennamiles@gmail.com">
-          <FaEnvelope className="w-8 h-8 text-gray-800" />
+          <FaEnvelope className="w-8 h-8" />
         </a>
 
         <a href="https://www.linkedin.com/in/binibiningjenna/" target="_blank" rel="noopener noreferrer">
-          <FaLinkedin className="w-8 h-8 text-gray-800" />
+          <FaLinkedin className="w-8 h-8" />
         </a>
 
         <a href="https://www.facebook.com/jennamiles.reyes.1" target="_blank" rel="noopener noreferrer">
-          <FaFacebook className="w-8 h-8 text-gray-800" />
+          <FaFacebook className="w-8 h-8" />
         </a>
       </div>
-      <div className="text-sm text-gray-500 mt-3">Let’s explore how we can create meaningful solutions together.</div>
+      <div className="text-sm text-gray-800 mt-3">Let’s explore how we can create meaningful solutions together.</div>
     </>
   );
 }

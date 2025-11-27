@@ -7,7 +7,7 @@ export default function Collapse({ label, children }) {
   return (
     <div className="bg-white border-b border-gray-200">
       <button onClick={() => setOpen(!open)} className="w-full flex items-center justify-between p-2">
-        <span className="font-semibold text-sm text-gray-700">{label}</span>
+        <span className="font-semibold text-gray-800">{label}</span>
         {open ? (
           <ChevronUp size={18} className="text-gray-600" />
         ) : (
@@ -16,7 +16,7 @@ export default function Collapse({ label, children }) {
       </button>
       <hr className="text-gray-200"></hr>
 
-      {open && <div className="px-4 py-4 text-gray-500 text-sm">{children}</div>}
+      {open && <div className="px-4 py-4 text-gray-800 text-sm text-justify">{children}</div>}
     </div>
   );
 }

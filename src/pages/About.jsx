@@ -4,6 +4,8 @@ import pup from "../img/pup_logo.jpg";
 import Card from "../components/Card";
 import Social from "../components/Social";
 import Accordion from "../components/Accordion";
+import Skills from "../components/Skills";
+import Timeline from "../components/Timeline";
 
 export default function About() {
   return (
@@ -28,38 +30,33 @@ export default function About() {
                       <ShieldCheck className="w-5 h-5" />
                     </span>
                   </div>
-                  <p className="text-sm text-gray-500">Front-End Developer</p>
+                  <p className="text-sm text-gray-800">Front-End Developer</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="">
-            <Card icon={User} title="About">
-              <div className="text-sm text-gray-500 mb-4 text-justify">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ab illo omnis provident excepturi at perferendis expedita quasi, quisquam adipisci! Odio aliquam earum dicta reprehenderit architecto itaque ipsa cum voluptate! Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Dicta quam placeat velit perferendis ab eius deserunt numquam est neque maiores, itaque asperiores exercitationem nulla doloribus, obcaecati fugiat molestias? Nihil, labore!
-              </div>
-              <div className="text-sm text-gray-500 mb-4 text-justify">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ab illo omnis provident excepturi at perferendis expedita quasi, quisquam adipisci! Odio aliquam earum dicta reprehenderit architecto itaque ipsa cum voluptate! Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Quibusdam ea, ut expedita laboriosam dolores tempora atque consectetur iste eos. Asperiores laboriosam temporibus eos blanditiis molestias voluptatum nemo omnis, ducimus perspiciatis.
-              </div>
-              <div className="text-sm text-gray-500 text-justify">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ab illo omnis provident excepturi at perferendis expedita quasi, quisquam adipisci! Odio aliquam earum dicta reprehenderit architecto itaque ipsa cum voluptate! Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Numquam dolorem quidem eligendi cupiditate. Obcaecati pariatur magnam magni esse nesciunt beatae rem voluptatem nihil. Quidem est unde asperiores, dolorem ab itaque.
-              </div>
-            </Card>
-          </div>
+          <Card icon={User} title="About">
+            <div className="text-sm text-gray-800 mb-4 text-justify">
+              I’m Jenna Miles Reyes, a 4th-year BS Information Technology student at the Polytechnic University of the Philippines – Sto. Tomas Campus. Throughout my academic journey, I’ve grown into someone who values clarity, consistency, and thoughtful problem-solving.
+            </div>
+            <div className="text-sm text-gray-800 mb-4 text-justify">
+              I’m driven by a mindset of continuous improvement — whether I’m leading a team, organizing tasks, or working independently, I make it a point to stay organized, communicate effectively, and deliver with intention. My background in both creative and technical environments has strengthened my adaptability and attention to detail, helping me approach challenges with patience and practical solutions.
+            </div>
+            <div className="text-sm text-gray-800 text-justify">
+              As I enter the field professionally, I am committed to bringing reliability, initiative, and collaboration to every project, providing practical solutions that enhance team performance and deliver meaningful results.
+            </div>
+          </Card>
 
           <div className="flex-1 mt-4">
             <Card icon={BookOpen} title="Education">
               <div className="flex flex-row gap-3">
-                <img src={pup} alt="PUP Logo " className="w-10 h-10 rounded-full object-cover mt-1" />
+                <img src={pup} alt="PUP Logo " className="w-10 h-10 rounded-full object-cover mt-1 filter grayscale" />
                 <div>
                   <div className="font-bold text-sm lg:text-base">Polytechnic University of the Philippines - Sto. Tomas Branch</div>
                   <div className="text-sm text-gray-500">Bachelor of Science in Information Technology</div>
-                  <div className="text-sm text-gray-500">2022 - 2026</div>
-                  <div className="text-sm text-gray-500 pt-4">Relevant coursework in Web Development, Database Management, Systems Analysis, Data Structures and Algorithms, and Project Management</div>
+                  <div className="text-sm text-gray-400">2022 - 2026</div>
+                  <div className="text-sm text-gray-800 pt-4">Relevant coursework in Web Development, Database Management, Systems Analysis, Data Structures and Algorithms, and Project Management</div>
                 </div>
               </div>
             </Card>
@@ -68,19 +65,38 @@ export default function About() {
           <div className="flex-1 mt-4">
             <Card icon={SquareMousePointer} title="Specializations">
               <div className="flex flex-col space-y-2">
-                <Accordion label="Front-End Development">I build interactive and responsive web interfaces using HTML, CSS, JavaScript and Bootstrap. I specialize in React and Tailwind to create clean, dynamic, and user-friendly web experiences.</Accordion>
-                <Accordion label="Project Management">I organize, plan, and manage projects efficiently, regardless of the type. With strong organizational and time management skills, I ensure tasks are completed on time, workflows are smooth, and goals are achieved successfully.</Accordion>
-                <Accordion label="Graphic Design">I create visually appealing designs for various purposes — from posters and publications to social media graphics and promotional materials. I focus on versatile, eye-catching layouts that communicate effectively and maintain a consistent style.</Accordion>
-                <Accordion label="UI/UX Design">I craft intuitive and user-centered interfaces. I focus on user experience by designing clear navigation, engaging interactions, and functional layouts while ensuring accessibility and responsiveness.</Accordion>
+                <Accordion label="Web Development">
+                  I build interactive and responsive web interfaces using HTML, CSS, JavaScript, and Bootstrap. I specialize in React and Tailwind to create clean, dynamic, and user-friendly web experiences. I also have basic experience with backend
+                  integration to connect front-end interfaces with databases and APIs.
+                </Accordion>
+                <Accordion label="Project Management">
+                  I organize, plan, and manage projects efficiently, regardless of the type. With strong organizational and time management skills, I ensure tasks are completed on time, workflows are smooth, and goals are achieved successfully.
+                </Accordion>
+                <Accordion label="Graphic Design">
+                  I create visually appealing designs for various purposes — from posters and publications to social media graphics and promotional materials. I focus on versatile, eye-catching layouts that communicate effectively and maintain a
+                  consistent style.
+                </Accordion>
+                <Accordion label="UI/UX Design">
+                  I craft intuitive and user-centered interfaces. I focus on user experience by designing clear navigation, engaging interactions, and functional layouts while ensuring accessibility and responsiveness.
+                </Accordion>
               </div>
             </Card>
           </div>
         </div>
 
-        <div className="flex-1 lg:max-w-md">
-          <Card icon={BriefcaseBusiness} title="Experience"></Card>
+        <div className="flex-1 lg:max-w-lg">
+          <Card icon={BriefcaseBusiness} title="Experience">
+            <Timeline position="Freelance Graphic Designer" company="Self-employed" year="2022 - Present" />
+            <Timeline position="Media and Documentation Assistant Head" company="PUPSTB Computer Society" year="Aug 2024 - Aug 2025" />
+            <Timeline position="Graphic Design Lead" company="PUPSTB Google Developer Student Club" year="Aug 2023 - Aug 2024" />
+          </Card>
           <div className="my-4">
-            <Card icon={Settings} title="Skills"></Card>
+            <Card icon={Settings} title="Skills">
+              <Skills title="Web Development" items={["HTML", "CSS", "JavaScript", "React", "Bootstrap", "Tailwind", "PHP"]} />
+              <Skills title="Design" items={["Canva", "Figma"]} />
+              <Skills title="Database" items={["SQL", "phpMyAdmin"]} />
+              <Skills title="Developer Tools" items={["Git", "Github", "VS Code", "Discord", "Teams", "Postman"]} />
+            </Card>
           </div>
           <div className="my-4">
             <Card icon={Mail} title="Let's Connect!">

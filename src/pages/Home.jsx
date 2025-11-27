@@ -11,7 +11,7 @@ export default function Home() {
         <div className="flex-1">
           <div className="w-full bg-white rounded-lg lg:mx-0">
             <div className="w-full h-64 object-cover mb-4"></div>
-          </div> 
+          </div>
 
           <Card icon={ChartSpline} title="Analytics">
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4">
@@ -26,8 +26,8 @@ export default function Home() {
             <Card icon={CheckLine} title="Recommendations">
               {data.recommendations.map((recommendation, index) => (
                 <div key={index} className="bg-gray-50 p-4 rounded mb-4">
-                  <div className="text-sm text-gray-500 mb-2">{recommendation.quote}</div>
-                  <p className="font-semibold text-sm text-gray-800">{recommendation.name}</p>
+                  <div className="text-sm text-gray-800 mb-2">{recommendation.quote}</div>
+                  <p className="font-semibold text-sm">{recommendation.name}</p>
                   <p className="text-xs text-gray-500">
                     {recommendation.position}, {recommendation.company}
                   </p>
@@ -41,30 +41,29 @@ export default function Home() {
           <Card icon={FolderCode} title="Featured Projects">
             <div className="pt-1">
               <FeaturedCard
-                title="Project Title"
-                description="This repository contains a collection of JavaScript code snippets, exercises, and experiments. It serves as a personal sandbox for practicing core JavaScript concepts"
+                title="Portfolio"
+                description="Portfolio is my personal project, a digital showcase of my skills, projects, and achievements. I built it to highlight my work in a professional and interactive way, featuring sections for my projects, experiences, and contact information."
                 link="https://example.com/project-link"
               />
               <FeaturedCard
-                title="Project Title"
-                description="This repository contains a collection of JavaScript code snippets, exercises, and experiments. It serves as a personal sandbox for practicing core JavaScript concepts"
+                title="PesoBuddy"
+                description="PesoBuddy is a personal finance management app designed to help users take control of their money effortlessly. With PesoBuddy, users can track their income, expenses, and savings in one intuitive platform."
                 link="https://example.com/project-link"
               />
               <FeaturedCard
-                title="Project Title"
-                description="This repository contains a collection of JavaScript code snippets, exercises, and experiments. It serves as a personal sandbox for practicing core JavaScript concepts"
+                title="StudentTrack"
+                description="StudenTrack is a student grade and RFID-based attendance tracking system built with HTML, CSS, JavaScript, Bootstrap and localStorage. Easily log attendance, manage subjects, and monitor academic progress."
                 link="https://example.com/project-link"
               />
               <FeaturedCard
-                title="Project Title"
-                description="This repository contains a collection of JavaScript code snippets, exercises, and experiments. It serves as a personal sandbox for practicing core JavaScript concepts"
+                title="Flixly"
+                description="Flixly is a movie and TV show discovery web app powered by the TMDb API. Browse trending movies, explore TV series, view detailed information, and watch trailers — all in one place."
                 link="https://example.com/project-link"
               />
-              <FeaturedCard
-                title="Project Title"
-                description="This repository contains a collection of JavaScript code snippets, exercises, and experiments. It serves as a personal sandbox for practicing core JavaScript concepts"
-                link="https://example.com/project-link"
-              />
+              <FeaturedCard 
+                title="GymBoost" 
+                description="GymBoost is a smart gym management system enhanced with RFID technology to streamline member check-ins and attendance tracking." 
+                link="https://example.com/project-link" />
             </div>
           </Card>
 
