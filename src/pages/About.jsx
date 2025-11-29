@@ -36,7 +36,7 @@ export default function About() {
             </div>
           </div>
 
-          <Card icon={User} title="About">
+          <Card icon={User} title="Profile">
             <div className="text-sm text-gray-800 mb-4 text-justify">
               I’m Jenna Miles Reyes, a 4th-year BS Information Technology student at the Polytechnic University of the Philippines – Sto. Tomas Campus. Throughout my academic journey, I’ve grown into someone who values clarity, consistency, and thoughtful problem-solving.
             </div>
