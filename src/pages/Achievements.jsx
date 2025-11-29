@@ -38,15 +38,16 @@ export default function Achievements() {
 
         {/* Modal */}
         {isOpen && (
-          <div className="fixed inset-0 flex items-center justify-center z-50 p-4 backdrop-blur-xs bg-black/40">
-            <div className="relative bg-white rounded-xl shadow-xl max-w-3xl w-full p-6 md:p-8">
-              {/* Close button */}
-              <button onClick={closeModal} className="absolute -top-3 -right-3 bg-white rounded-full p-1 shadow hover:bg-gray-100 transition">
+          <div className="fixed inset-0 flex items-center justify-center z-50 p-4 bg-black/40 backdrop-blur-xs">
+            <div className="relative bg-white rounded-xl shadow-xl max-w-3xl w-full max-h-[90vh] p-6 md:p-8 overflow-hidden">
+
+              <button onClick={closeModal} className="absolute top-1 right-1 bg-white rounded-full p-1 shadow hover:bg-gray-100 transition">
                 <X className="w-6 h-6 text-gray-600" />
               </button>
 
-              {/* Image */}
-              <img src={modalImage} alt="Certificate" className="w-full h-auto rounded-lg object-contain" />
+              <div className="max-h-[80vh] overflow-auto">
+                <img src={modalImage} alt="Certificate" className="w-full h-auto rounded-lg object-contain" />
+              </div>
             </div>
           </div>
         )}
